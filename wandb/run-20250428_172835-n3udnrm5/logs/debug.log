@@ -1,0 +1,27 @@
+2025-04-28 17:28:35,586 INFO    MainThread:80940 [wandb_setup.py:_flush():75] Loading settings from /Users/ethankreuzer/.config/wandb/settings
+2025-04-28 17:28:35,587 INFO    MainThread:80940 [wandb_setup.py:_flush():75] Loading settings from /Users/ethankreuzer/Desktop/UdeM/MILA/IFT6168/project/wandb/settings
+2025-04-28 17:28:35,587 INFO    MainThread:80940 [wandb_setup.py:_flush():75] Loading settings from environment variables: {}
+2025-04-28 17:28:35,587 INFO    MainThread:80940 [wandb_setup.py:_flush():75] Inferring run settings from compute environment: {'program_relpath': 'dcdfg/run_gaussian.py', 'program': '/Users/ethankreuzer/Desktop/UdeM/MILA/IFT6168/project/dcdfg/run_gaussian.py'}
+2025-04-28 17:28:35,587 INFO    MainThread:80940 [wandb_init.py:_log_setup():405] Logging user logs to /Users/ethankreuzer/Desktop/UdeM/MILA/IFT6168/project/wandb/run-20250428_172835-n3udnrm5/logs/debug.log
+2025-04-28 17:28:35,587 INFO    MainThread:80940 [wandb_init.py:_log_setup():406] Logging internal logs to /Users/ethankreuzer/Desktop/UdeM/MILA/IFT6168/project/wandb/run-20250428_172835-n3udnrm5/logs/debug-internal.log
+2025-04-28 17:28:35,587 INFO    MainThread:80940 [wandb_init.py:init():439] calling init triggers
+2025-04-28 17:28:35,587 INFO    MainThread:80940 [wandb_init.py:init():442] wandb.init called with sweep_config: {}
+config: {}
+2025-04-28 17:28:35,587 INFO    MainThread:80940 [wandb_init.py:init():492] starting backend
+2025-04-28 17:28:35,587 INFO    MainThread:80940 [backend.py:_multiprocessing_setup():99] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2025-04-28 17:28:35,628 INFO    MainThread:80940 [backend.py:ensure_launched():219] starting backend process...
+2025-04-28 17:28:35,646 INFO    MainThread:80940 [backend.py:ensure_launched():224] started backend process with pid: 80960
+2025-04-28 17:28:35,648 INFO    MainThread:80940 [wandb_init.py:init():501] backend started and connected
+2025-04-28 17:28:35,653 INFO    MainThread:80940 [wandb_init.py:init():565] updated telemetry
+2025-04-28 17:28:35,655 INFO    MainThread:80940 [wandb_init.py:init():596] communicating run to backend with 30 second timeout
+2025-04-28 17:28:36,890 INFO    MainThread:80940 [wandb_run.py:_on_init():1759] communicating current version
+2025-04-28 17:28:36,948 INFO    MainThread:80940 [wandb_run.py:_on_init():1763] got version response upgrade_message: "wandb version 0.19.10 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2025-04-28 17:28:36,948 INFO    MainThread:80940 [wandb_init.py:init():625] starting run threads in backend
+2025-04-28 17:28:41,958 INFO    MainThread:80940 [wandb_run.py:_console_start():1733] atexit reg
+2025-04-28 17:28:41,958 INFO    MainThread:80940 [wandb_run.py:_redirect():1606] redirect: SettingsConsole.REDIRECT
+2025-04-28 17:28:41,959 INFO    MainThread:80940 [wandb_run.py:_redirect():1611] Redirecting console.
+2025-04-28 17:28:41,960 INFO    MainThread:80940 [wandb_run.py:_redirect():1667] Redirects installed.
+2025-04-28 17:28:41,960 INFO    MainThread:80940 [wandb_init.py:init():664] run started, returning control to user process
+2025-04-28 17:28:41,960 INFO    MainThread:80940 [wandb_run.py:_config_callback():992] config_cb None None {'model_name': 'MLPModuleGaussianModel', 'module_name': 'MLPModularGaussianModule', 'i-dataset': 1}
+2025-04-28 17:28:41,968 INFO    MainThread:80940 [wandb_run.py:_config_callback():992] config_cb None None {'num_vars': 10, 'num_layers': 2, 'num_modules': 10, 'hid_dim': 16, 'nonlin': 'leaky_relu', 'lr_init': 0.001, 'reg_coeff': 0.5, 'constraint_mode': 'spectral_radius'}

@@ -1,0 +1,111 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.12.11
+    framework: lightning
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    m:
+    - 1: trainer/global_step
+      6:
+      - 3
+    - 1: Val/aug_lagrangian
+      5: 1
+      6:
+      - 1
+    - 1: Val/nll
+      5: 1
+      6:
+      - 1
+    - 1: Val/not_nll
+      5: 1
+      6:
+      - 1
+    - 1: Val/constraint_violation
+      5: 1
+      6:
+      - 1
+    - 1: Val/reg_value
+      5: 1
+      6:
+      - 1
+    - 1: Monitor/checkup
+      5: 1
+      6:
+      - 1
+    - 1: epoch
+      5: 1
+      6:
+      - 1
+    - 1: Train/aug_lagrangian
+      5: 1
+      6:
+      - 1
+    - 1: Train/nll
+      5: 1
+      6:
+      - 1
+    - 1: Train/not_nll
+      5: 1
+      6:
+      - 1
+    - 1: Aug_lag/mu
+      5: 1
+      6:
+      - 1
+    - 1: Aug_lag/gamma
+      5: 1
+      6:
+      - 1
+    - 1: Monitor/stationary
+      5: 1
+      6:
+      - 1
+    python_version: 3.9.13
+    start_time: 1745875715
+    t:
+      1:
+      - 1
+      - 5
+      - 9
+      3:
+      - 7
+      4: 3.9.13
+      5: 0.12.11
+      8:
+      - 5
+constraint_mode:
+  desc: null
+  value: spectral_radius
+hid_dim:
+  desc: null
+  value: 16
+i-dataset:
+  desc: null
+  value: 1
+lr_init:
+  desc: null
+  value: 0.001
+model_name:
+  desc: null
+  value: MLPModuleGaussianModel
+module_name:
+  desc: null
+  value: MLPModularGaussianModule
+nonlin:
+  desc: null
+  value: leaky_relu
+num_layers:
+  desc: null
+  value: 2
+num_modules:
+  desc: null
+  value: 10
+num_vars:
+  desc: null
+  value: 10
+reg_coeff:
+  desc: null
+  value: 0.5
