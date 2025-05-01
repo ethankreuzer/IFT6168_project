@@ -1,0 +1,23 @@
+name: dcdfg_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - numpy=1.21.5
+  - pandas=1.4.0
+  - networkx=2.6.3
+  - numba=0.55.0
+  - scanpy=1.9.1
+  - scikit-learn=1.1.2
+  - tqdm=4.62.3
+  - setuptools=59.5.0
+  - pip
+  - pip:
+      - causaldag==0.1a163
+      - cdt==0.5.23
+      - conditional_independence==0.1a5
+      - pytorch-lightning==1.5.10
+      - torch==1.10.2
+      - wandb==0.12.11
+      
