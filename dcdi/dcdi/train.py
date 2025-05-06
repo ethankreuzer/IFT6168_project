@@ -121,8 +121,8 @@ def train(model, gt_adjacency, gt_interv, train_data, test_data, opt, metrics_ca
         full_adjacency = torch.ones((model.num_vars, model.num_vars)) - torch.eye(model.num_vars)
         constraint_normalization = compute_dag_constraint(full_adjacency).item()
 
-    # device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-    # print(device)
+    device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+    print(device)
     model = model.to(device)
 
     # Learning loop:
@@ -132,7 +132,7 @@ def train(model, gt_adjacency, gt_interv, train_data, test_data, opt, metrics_ca
         x, mask, regime = train_data.sample(opt.train_batch_size)
 
         # Ensure tensors are on the same device as model (Moved inside training loop) <-- CHANGED BLOCK
-        device = next(model.parameters()).device  # <-- Added line
+        # device = next(model.parameters()).device  # <-- Added line
         x = x.to(device)                          # <-- Added line
         mask = mask.to(device)
         if not torch.is_tensor(regime):  # <-- Added safety check
