@@ -122,7 +122,7 @@ def train(model, gt_adjacency, gt_interv, train_data, test_data, opt, metrics_ca
         constraint_normalization = compute_dag_constraint(full_adjacency).item()
 
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-    print(device)
+    print("DEVICE", device)
     model = model.to(device)
 
     # Learning loop:
